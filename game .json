@@ -1,0 +1,1517 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 283,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "37f54747-369c-4fd8-80ee-e9a4ba675022",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "starting-platformer",
+    "version": "1.0.0",
+    "name": "game",
+    "description": "",
+    "author": "",
+    "windowWidth": 1920,
+    "windowHeight": 1080,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/StartingGround.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingGround.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingCoin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingCoin.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Top arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Top arrow button.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/e3943e1b23ceb90f00fc5e7c0481c5147b983fdc5397fb3690e102e53ce72d4f_Top arrow button.png",
+          "name": "Top arrow button.png"
+        }
+      },
+      {
+        "file": "assets/Flat dark joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat dark joystick border.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1db606cabd7372d1494ba5934bc25bcdd72f5a213c4a27509be57c3f4d5aecca_Flat dark joystick border.png",
+          "name": "Flat dark joystick border.png"
+        }
+      },
+      {
+        "file": "assets/Flat dark joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat dark joystick thumb.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/10167ade22c4a6b48324e6c1d1bd6dc74179d7bed0775890903f418b4a05c8a1_Flat dark joystick thumb.png",
+          "name": "Flat dark joystick thumb.png"
+        }
+      },
+      {
+        "file": "assets/CoinPickUp.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/CoinPickUp.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-idle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-run.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-run.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-jump.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-jump.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-fall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-fall.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-combo_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-combo_1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-combo_1_end.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-combo_1_end.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player22",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player23",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player24",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player25",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player26",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player27",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player28",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player29",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player30",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "male_hero-jump2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "male_hero-jump2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player31",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player32",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player33.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player33",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player34",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player35",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player36",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player37",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player38",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player39",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player40",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player41",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player42",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle22",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle23",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle24",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle25",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle26",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle27",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Idle28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Idle28",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Run18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Run18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Jump12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Jump12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Fall14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Fall14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack22",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingPlayer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingPlayer.png",
+        "smoothed": true,
+        "userAdded": false
+      }
+    ]
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-scene"
+    }
+  ],
+  "externalEvents": [],
+  "tests": [
+    {
+      "description": "Pressing Space makes the player jump off the platform it stands on, and gravity brings it back down at the same place.",
+      "name": "Jumping with Space",
+      "type": "gameplay",
+      "source": [
+        "// The player must be able to jump off the ground with the Space key",
+        "// (PlatformerObject default controls, jumpSpeed 717 / gravity 1050).",
+        "await harness.goToScene('Game Scene');",
+        "harness.watch('Player');",
+        "",
+        "const getPlayer = () => harness.getObjects('Player')[0];",
+        "const isOnFloor = () =>",
+        "  getPlayer().behaviors.PlatformerObject.state.IsOnFloor === true;",
+        "",
+        "// The player starts in the air: wait for it to land on the ground platform.",
+        "const landed = await harness.stepUntil(isOnFloor, { maxFrames: 120 });",
+        "harness.assert(landed, 'The player falls and lands on the ground platform.');",
+        "",
+        "const groundY = getPlayer().centerY;",
+        "const groundX = getPlayer().centerX;",
+        "",
+        "// Standing still must not move the player vertically.",
+        "await harness.stepFrames(20);",
+        "harness.assert(",
+        "  Math.abs(getPlayer().centerY - groundY) < 1,",
+        "  'The player stays on the ground while no key is pressed.'",
+        ");",
+        "",
+        "// Jump: hold Space long enough to benefit from the jump sustain time.",
+        "harness.setKeyPressed('Space', true);",
+        "await harness.stepFrames(20);",
+        "harness.setKeyPressed('Space', false);",
+        "",
+        "let highestY = groundY;",
+        "let leftTheFloor = false;",
+        "await harness.stepFrames(40, {",
+        "  onFrame: () => {",
+        "    const player = getPlayer();",
+        "    highestY = Math.min(highestY, player.centerY);",
+        "    if (player.behaviors.PlatformerObject.state.IsOnFloor === false)",
+        "      leftTheFloor = true;",
+        "  },",
+        "});",
+        "const jumpHeight = groundY - highestY;",
+        "console.log('jumpHeight=' + Math.round(jumpHeight));",
+        "",
+        "harness.assert(leftTheFloor, 'The player leaves the floor when jumping.');",
+        "harness.assert(",
+        "  jumpHeight > 150,",
+        "  'The player rises well above the ground when jumping (rose by ' +",
+        "    Math.round(jumpHeight) +",
+        "    'px).'",
+        ");",
+        "",
+        "// ...and gravity brings it back down on the same platform.",
+        "const landedBack = await harness.stepUntil(isOnFloor, { maxFrames: 120 });",
+        "harness.assert(landedBack, 'The player falls back onto the floor.');",
+        "harness.assert(",
+        "  Math.abs(getPlayer().centerY - groundY) < 2,",
+        "  'The player lands back at the height it jumped from.'",
+        ");",
+        "harness.assert(",
+        "  Math.abs(getPlayer().centerX - groundX) < 2,",
+        "  'A jump without a direction key does not move the player horizontally.'",
+        ");"
+      ]
+    },
+    {
+      "description": "The player drops down to the ground and runs over the row of coins: every coin it touches is collected.",
+      "name": "Collecting the coins by running into them",
+      "type": "gameplay",
+      "source": [
+        "// Coins are picked up by touching them: the player starts on a raised",
+        "// platform and has to drop down to the ground to run over the coins there.",
+        "await harness.goToScene('Game Scene');",
+        "harness.watch('Coins');",
+        "",
+        "const getPlayer = () => harness.getObjects('Player')[0];",
+        "const isOnFloor = () =>",
+        "  getPlayer().behaviors.PlatformerObject.state.IsOnFloor === true;",
+        "const coinIds = () => harness.getObjects('Coins').map(coin => coin.id);",
+        "",
+        "const landed = await harness.stepUntil(isOnFloor, { maxFrames: 120 });",
+        "harness.assert(landed, 'The player lands on its starting platform.');",
+        "await harness.stepFrames(8);",
+        "",
+        "const coinsBefore = coinIds().length;",
+        "harness.assert(coinsBefore > 0, 'There are coins to collect in the level.');",
+        "",
+        "// Standing still collects nothing: this is what makes the checks below a",
+        "// test of the player moving into the coins.",
+        "await harness.stepFrames(20);",
+        "harness.assert(",
+        "  coinIds().length === coinsBefore,",
+        "  'Standing still collects no coin.'",
+        ");",
+        "",
+        "const startingPoint = getPlayer();",
+        "const coinsOnTheGroundBelow = harness",
+        "  .getObjects('Coins')",
+        "  .filter(coin => coin.centerY > startingPoint.centerY + 100);",
+        "harness.assert(",
+        "  coinsOnTheGroundBelow.length >= 3,",
+        "  'There is a row of coins on the ground below the starting platform (found ' +",
+        "    coinsOnTheGroundBelow.length +",
+        "    ').'",
+        ");",
+        "const targetIds = coinsOnTheGroundBelow.map(coin => coin.id);",
+        "",
+        "// Run right until the platform ends and the player drops down.",
+        "harness.setKeyPressed('Right', true);",
+        "const fell = await harness.stepUntil(() => !isOnFloor(), { maxFrames: 120 });",
+        "harness.assert(fell, 'Running right takes the player off the edge of the platform.');",
+        "const landedBelow = await harness.stepUntil(isOnFloor, { maxFrames: 120 });",
+        "harness.releaseAllInputs();",
+        "await harness.stepFrames(5);",
+        "harness.assert(landedBelow, 'The player lands on the ground below.');",
+        "harness.assert(",
+        "  getPlayer().centerY > startingPoint.centerY + 100,",
+        "  'The player is now down on the ground, next to the coins.'",
+        ");",
+        "harness.assert(",
+        "  coinIds().length === coinsBefore,",
+        "  'Falling down next to the coins does not collect them yet.'",
+        ");",
+        "",
+        "// Run back left, over the row of coins.",
+        "harness.setKeyPressed('Left', true);",
+        "const collectedThemAll = await harness.stepUntil(",
+        "  () => {",
+        "    const remaining = coinIds();",
+        "    return targetIds.every(id => !remaining.includes(id));",
+        "  },",
+        "  { maxFrames: 150 }",
+        ");",
+        "harness.releaseAllInputs();",
+        "await harness.stepFrames(5);",
+        "",
+        "const remaining = coinIds();",
+        "console.log(",
+        "  'coinsBefore=' +",
+        "    coinsBefore +",
+        "    ' ranOver=' +",
+        "    targetIds.length +",
+        "    ' remaining=' +",
+        "    remaining.length +",
+        "    ' playerX=' +",
+        "    Math.round(getPlayer().centerX)",
+        ");",
+        "harness.assert(",
+        "  collectedThemAll,",
+        "  'Running over the row of coins collects every one of them (' +",
+        "    targetIds.filter(id => remaining.includes(id)).length +",
+        "    ' were left behind).'",
+        ");",
+        "harness.assert(",
+        "  remaining.length === coinsBefore - targetIds.length,",
+        "  'Only the coins the player ran into were collected.'",
+        ");",
+        "",
+        "// A picture of what the game looks like once this has happened, kept with",
+        "// the test results.",
+        "await harness.takeScreenshot('the level once every coin has been collected');"
+      ]
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritemultitouchjoystick"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/platformercharacteranimator"
+    }
+  ],
+  "externalLayouts": []
+}
