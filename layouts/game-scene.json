@@ -21,13 +21,19 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5290357402156881,
+    "zoomFactor": 0.43357743047024105,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
   "variables": [
+    {
+      "name": "AttackStage",
+      "persistentUuid": "7bcb4b10-2138-4cdb-b044-90970cc5c58d",
+      "type": "number",
+      "value": 0
+    },
     {
       "name": "CoinPitch",
       "persistentUuid": "a9ab811d-91cf-4b76-95a3-81d9cd86156b",
@@ -45,8 +51,8 @@
       "name": "Player",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 79,
-      "x": 118,
-      "y": 165,
+      "x": -526,
+      "y": 757,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
@@ -61,10 +67,10 @@
       "layer": "",
       "name": "Platform_Ground",
       "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-      "width": 2711,
+      "width": 4926,
       "x": -1041,
       "y": 968,
-      "zOrder": -4,
+      "zOrder": -21,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -78,10 +84,10 @@
       "layer": "",
       "name": "NewSprite",
       "persistentUuid": "f7a33c98-bec7-4b22-8b3e-132346fe3ea5",
-      "width": 2417,
+      "width": 3993,
       "x": -768,
       "y": -106,
-      "zOrder": -3,
+      "zOrder": -20,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -130,7 +136,14 @@
       "preScale": 2,
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "IsAttacking",
+          "persistentUuid": "cb952236-9a0a-4e54-aab4-fe3700432b80",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -1384,13 +1397,13 @@
           ]
         },
         {
-          "name": "Attack",
+          "name": "Attack1",
           "useMultipleDirections": false,
           "directions": [
             {
               "looping": false,
               "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.07,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -1755,6 +1768,752 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "Attack22",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.07,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack23",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack24",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack25",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack26",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack27",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack28",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack29",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack30",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack31",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Attack3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.07,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack43",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack44",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack45",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack46",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack47",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack48",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack49",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack50",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack51",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack52",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 121.5,
+                    "y": 137
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 122,
+                    "y": 137
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 84,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 105
+                      },
+                      {
+                        "x": 150,
+                        "y": 180
+                      },
+                      {
+                        "x": 84,
+                        "y": 180
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Attack53",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3441,6 +4200,7 @@
       "comment": "Player\n"
     },
     {
+      "aiGeneratedEventId": "01M5RTQ5HDY2WD3XR0KZ3MD9SY",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3451,6 +4211,16 @@
           "parameters": [
             "Player",
             "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
           ]
         }
       ],
@@ -3469,37 +4239,69 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01M5RZWMZ2CHDPTVWR3V9NM76Q",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Player",
+            "PlatformerObject",
+            "\"Right\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::IsOnFloor"
+          },
+          "parameters": [
+            "Player",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
           "subInstructions": [
             {
               "type": {
-                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "Player",
-                "PlatformerObject",
-                "\"Right\""
+                "AttackStage",
+                "=",
+                "0"
               ]
             },
             {
               "type": {
-                "value": "PlatformBehavior::IsOnFloor"
+                "value": "CompareTimer"
               },
               "parameters": [
-                "Player",
-                "PlatformerObject"
+                "",
+                "\"ComboWindow\"",
+                ">",
+                "0.15"
               ]
             }
           ]
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -3524,37 +4326,69 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01M5RZWMZ2CHDPTVWR3V9NM76Q",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+          },
+          "parameters": [
+            "Player",
+            "PlatformerObject",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlatformBehavior::IsOnFloor"
+          },
+          "parameters": [
+            "Player",
+            "PlatformerObject"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
           },
           "parameters": [],
           "subInstructions": [
             {
               "type": {
-                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
+                "value": "NumberVariable"
               },
               "parameters": [
-                "Player",
-                "PlatformerObject",
-                "\"Left\""
+                "AttackStage",
+                "=",
+                "0"
               ]
             },
             {
               "type": {
-                "value": "PlatformBehavior::IsOnFloor"
+                "value": "CompareTimer"
               },
               "parameters": [
-                "Player",
-                "PlatformerObject"
+                "",
+                "\"ComboWindow\"",
+                ">",
+                "0.15"
               ]
             }
           ]
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -3579,6 +4413,7 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01M5RZWMZ2CHDPTVWR3V9NM76Q",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3590,9 +4425,48 @@
             "PlatformerObject",
             "\"Jump\""
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "AttackStage",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"ComboWindow\"",
+                ">",
+                "0.15"
+              ]
+            }
+          ]
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -3607,6 +4481,7 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01M5RZWMZ2CHDPTVWR3V9NM76Q",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3617,9 +4492,48 @@
             "Player",
             "PlatformerObject"
           ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Or"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "AttackStage",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"ComboWindow\"",
+                ">",
+                "0.15"
+              ]
+            }
+          ]
         }
       ],
       "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
+          ]
+        },
         {
           "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
@@ -3634,6 +4548,7 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01M5RTV0Z15FVSJ7YR96EENGKN",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3647,6 +4562,16 @@
         },
         {
           "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
             "value": "BuiltinCommonInstructions::Once"
           },
           "parameters": []
@@ -3655,13 +4580,298 @@
       "actions": [
         {
           "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "AnimatableCapability::AnimatableBehavior::SetName"
           },
           "parameters": [
             "Player",
             "Animation",
             "=",
-            "\"Attack\""
+            "\"Attack1\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"ComboWindow\""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5RTTKTJZMKGD5SPTNM3QBMW",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Attack1\""
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"ComboWindow\"",
+            ">",
+            "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Attack2\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"ComboWindow\""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5RTTKTJZMKGD5SPTNM3QBMW",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::Name"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Attack2\""
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"ComboWindow\"",
+            ">",
+            "0.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "3"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Attack3\""
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetTimer"
+          },
+          "parameters": [
+            "",
+            "\"ComboWindow\""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5RTQ5HDY2WD3XR0KZ3MD9SY",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            ">",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Player",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Player",
+            "Animation",
+            "=",
+            "\"Idle\""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5RTQ5HDY2WD3XR0KZ3MD9SY",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            ">",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "CompareTimer"
+          },
+          "parameters": [
+            "",
+            "\"ComboWindow\"",
+            ">",
+            "2.5"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+          },
+          "parameters": [
+            "Player",
+            "Animation"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "AttackStage",
+            "=",
+            "0"
           ]
         }
       ]

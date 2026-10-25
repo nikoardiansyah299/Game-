@@ -19,13 +19,13 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-platformer",
     "version": "1.0.0",
-    "name": "game ",
+    "name": "game",
     "description": "",
     "author": "",
     "windowWidth": 1920,
     "windowHeight": 1080,
     "latestCompilationDirectory": "",
-    "maxFPS": 60,
+    "maxFPS": 100,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {
@@ -1328,6 +1328,270 @@
         "name": "Cave Platformer Asset Sheet.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Gua pixel art.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Gua pixel art.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Cyan Crystal Cavern Platformer Landscape.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cyan Crystal Cavern Platformer Landscape.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack23",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack24",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack25",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack26.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack26",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack27.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack27",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack28.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack28",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack29.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack29",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack30.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack30",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack31.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack31",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack32.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack32",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack33.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack33",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack34",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack35",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack36",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack37",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack38",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack39",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack40",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack41",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack42",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack43",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack44",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack45",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack46",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack47",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack48",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack49",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack50",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack51",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack52",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Attack53.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Attack53",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1508,6 +1772,102 @@
         "// A picture of what the game looks like once this has happened, kept with",
         "// the test results.",
         "await harness.takeScreenshot('the level once every coin has been collected');"
+      ]
+    },
+    {
+      "description": "Clicking 3 times chains Attack1->Attack2->Attack3 then returns to Idle",
+      "lastRunAt": 1792908573173,
+      "lastRunDurationMs": 553,
+      "lastRunFramesExecuted": 135,
+      "lastRunStatus": "passed",
+      "name": "Attack combo chains 1-2-3",
+      "type": "gameplay",
+      "source": [
+        "await harness.goToScene('Game Scene');",
+        "await harness.stepFrames(30);",
+        "async function click() {",
+        "  harness.setMouseButtonPressed(true, 'left');",
+        "  await harness.stepFrames(2);",
+        "  harness.setMouseButtonPressed(false, 'left');",
+        "  await harness.stepFrames(3);",
+        "}",
+        "await click();",
+        "let p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Attack1', 'First click plays Attack1, got '+p.animation);",
+        "await harness.stepFrames(20);",
+        "await click();",
+        "p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Attack2', 'Second click chains to Attack2, got '+p.animation);",
+        "await harness.stepFrames(20);",
+        "await click();",
+        "p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Attack3', 'Third click chains to Attack3, got '+p.animation);",
+        "await harness.stepUntil(() => {",
+        "  const v = harness.getSceneVariable('AttackStage');",
+        "  return v && v.value === 0;",
+        "}, {maxFrames: 300});",
+        "p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Idle' || p.animation === 'Run', 'Combo ends back to Idle/Run, got '+p.animation);",
+        "await harness.takeScreenshot('combo-done');"
+      ]
+    },
+    {
+      "description": "Combo works standing still; moving or jumping cancels the attack",
+      "lastRunAt": 1792913871851,
+      "lastRunDurationMs": 484,
+      "lastRunFramesExecuted": 175,
+      "lastRunStatus": "passed",
+      "name": "Attack cancel with move or jump",
+      "type": "gameplay",
+      "source": [
+        "await harness.goToScene('Game Scene');",
+        "await harness.stepFrames(30);",
+        "async function click() {",
+        "  harness.setMouseButtonPressed(true, 'left');",
+        "  await harness.stepFrames(2);",
+        "  harness.setMouseButtonPressed(false, 'left');",
+        "  await harness.stepFrames(3);",
+        "}",
+        "// 1. Combo still works standing still",
+        "await click();",
+        "let p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Attack1', 'Standing click plays Attack1, got '+p.animation);",
+        "await harness.stepFrames(35);",
+        "await click();",
+        "p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Attack2', 'Second click chains to Attack2, got '+p.animation);",
+        "await harness.stepUntil(() => {",
+        "  const v = harness.getSceneVariable('AttackStage');",
+        "  return v && v.value === 0;",
+        "}, {maxFrames: 300});",
+        "// 2. Movement cancels attack",
+        "await click();",
+        "p = harness.getObjects('Player')[0];",
+        "harness.assert(p.animation === 'Attack1', 'Attack restarts with Attack1, got '+p.animation);",
+        "await harness.stepFrames(15);",
+        "harness.setKeyPressed('Right', true);",
+        "await harness.stepFrames(15);",
+        "harness.setKeyPressed('Right', false);",
+        "p = harness.getObjects('Player')[0];",
+        "let stage = harness.getSceneVariable('AttackStage');",
+        "harness.assert(stage && stage.value === 0, 'Moving cancels combo (stage 0), got '+(stage && stage.value));",
+        "harness.assert(p.animation === 'Run', 'Moving during attack switches to Run, got '+p.animation);",
+        "await harness.stepUntil(() => {",
+        "  const v = harness.getSceneVariable('AttackStage');",
+        "  return v && v.value === 0;",
+        "}, {maxFrames: 120});",
+        "// 3. Jump cancels attack",
+        "await click();",
+        "await harness.stepFrames(15);",
+        "harness.setKeyPressed('Space', true);",
+        "await harness.stepFrames(5);",
+        "harness.setKeyPressed('Space', false);",
+        "await harness.stepFrames(5);",
+        "p = harness.getObjects('Player')[0];",
+        "stage = harness.getSceneVariable('AttackStage');",
+        "harness.assert(stage && stage.value === 0, 'Jump cancels combo (stage 0), got '+(stage && stage.value));",
+        "harness.assert(p.animation === 'Jump' || p.animation === 'Fall', 'Jump during attack switches to Jump/Fall, got '+p.animation);",
+        "await harness.takeScreenshot('cancel-done');"
       ]
     }
   ],
