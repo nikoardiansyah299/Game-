@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 283,
+    "build": 285,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-platformer",
     "version": "1.0.0",
-    "name": "game",
+    "name": "game ",
     "description": "",
     "author": "",
     "windowWidth": 1920,
@@ -1310,6 +1310,22 @@
         "kind": "image",
         "metadata": "",
         "name": "assets\\StartingPlayer.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Misty Blue Crystal Cavern.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Misty Blue Crystal Cavern.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Cave Platformer Asset Sheet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Cave Platformer Asset Sheet.png",
         "smoothed": true,
         "userAdded": false
       }
