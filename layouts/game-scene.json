@@ -21,13 +21,25 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.43357743047024105,
+    "zoomFactor": 0.4057518905943863,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
   "variables": [
+    {
+      "name": "IsTransitioning",
+      "persistentUuid": "a1dc7751-4e86-4209-8899-d257604defc3",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "CurrentArea",
+      "persistentUuid": "2ff932ce-5570-4950-ad38-f34add4d5122",
+      "type": "number",
+      "value": 1
+    },
     {
       "name": "AttackStage",
       "persistentUuid": "7bcb4b10-2138-4cdb-b044-90970cc5c58d",
@@ -51,9 +63,9 @@
       "name": "Player",
       "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
       "width": 79,
-      "x": -526,
-      "y": 757,
-      "zOrder": 1,
+      "x": 2900,
+      "y": 822,
+      "zOrder": 102,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -67,7 +79,7 @@
       "layer": "",
       "name": "Platform_Ground",
       "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-      "width": 4926,
+      "width": 4259,
       "x": -1041,
       "y": 968,
       "zOrder": -21,
@@ -82,12 +94,45 @@
       "height": 1218,
       "keepRatio": true,
       "layer": "",
-      "name": "NewSprite",
+      "name": "area_1",
       "persistentUuid": "f7a33c98-bec7-4b22-8b3e-132346fe3ea5",
       "width": 3993,
       "x": -768,
       "y": -106,
-      "zOrder": -20,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "RedSmoothHeart",
+      "persistentUuid": "832d9db9-0a79-466b-b9e2-25022ffc878b",
+      "width": 0,
+      "x": 48,
+      "y": 35,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1249,
+      "keepRatio": true,
+      "layer": "",
+      "name": "area_2",
+      "persistentUuid": "5e138ee0-cd37-49e8-854c-438fbcb7c115",
+      "width": 3836,
+      "x": 3384,
+      "y": -124,
+      "zOrder": 9,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -99,12 +144,28 @@
       "height": 64,
       "keepRatio": true,
       "layer": "",
-      "name": "Boundary",
-      "persistentUuid": "86eb5ff9-4b29-411f-a864-a3032e220119",
-      "width": 2869,
-      "x": -769,
-      "y": 1113,
-      "zOrder": 2,
+      "name": "Platform_Ground",
+      "persistentUuid": "8b9e2a8e-0792-4186-bcb7-00a9f508fe03",
+      "width": 4259,
+      "x": 3337,
+      "y": 919,
+      "zOrder": -21,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "area_2_start",
+      "persistentUuid": "6bcefa23-2971-4e04-a3f6-5c2d8086f0b7",
+      "width": 0,
+      "x": 3604,
+      "y": 832,
+      "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -113,15 +174,66 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 1478,
+      "height": 1274,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Platform_Ground",
+      "persistentUuid": "ad298143-1387-454e-a337-3578b6fb9a88",
+      "width": 64,
+      "x": -829,
+      "y": -95,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
       "keepRatio": true,
       "layer": "",
-      "name": "Boundary2",
-      "persistentUuid": "65c484f9-8f93-4133-9d8e-b158f7142aae",
-      "width": 64,
-      "x": -839,
-      "y": -105,
-      "zOrder": 3,
+      "name": "area_1_start",
+      "persistentUuid": "5e7aa9c8-e2f2-4f61-8629-bb23fe5d7230",
+      "width": 0,
+      "x": 2945,
+      "y": 885,
+      "zOrder": -22,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 1080,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "Fade",
+      "opacity": 0,
+      "persistentUuid": "b10555ec-9c57-4091-b5bd-03bb0962ba39",
+      "width": 1920,
+      "x": 0,
+      "y": 0,
+      "zOrder": 100,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "flippedX": true,
+      "height": 530,
+      "keepRatio": true,
+      "layer": "",
+      "name": "NewSprite2",
+      "persistentUuid": "b37a2650-e351-42ef-9ba8-7175be26012c",
+      "width": 137,
+      "x": 5768,
+      "y": 539,
+      "zOrder": 101,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -3965,7 +4077,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "NewSprite",
+      "name": "area_1",
       "persistentUuid": "d8f90c20-8a60-4470-8abe-63f3258910fa",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -4046,20 +4158,277 @@
     {
       "assetStoreId": "",
       "height": 64,
-      "name": "Boundary2",
+      "name": "area_2_start",
       "persistentUuid": "fbb84b3a-e746-491e-b853-31fa627f251e",
       "texture": "assets\\StartingGround.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 64,
       "variables": [],
       "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "4858fa5d29230c3b632cd7b4b15bc809049db551f74c7d8c319c3024ddebba92",
+      "name": "RedSmoothHeart",
+      "persistentUuid": "b4716c78-d751-402d-824a-8acd9480fb5b",
+      "type": "TiledUnitsBar::TiledUnitsBar",
+      "variant": "Red Smooth Heart",
+      "variables": [],
+      "effects": [],
       "behaviors": [
         {
-          "name": "Platform",
-          "type": "PlatformBehavior::PlatformBehavior",
-          "canBeGrabbed": false,
-          "platformType": "NormalPlatform",
-          "yGrabOffset": 0
+          "bottomEdgeAnchor": 1,
+          "leftEdgeAnchor": 1,
+          "name": "Anchor",
+          "relativeToOriginalWindowSize": true,
+          "rightEdgeAnchor": 1,
+          "topEdgeAnchor": 1,
+          "type": "AnchorBehavior::AnchorBehavior",
+          "useLegacyBottomAndRightAnchors": false
+        }
+      ],
+      "content": {
+        "UnitWidth": 58,
+        "HideBackground": true,
+        "ShowBackground": false,
+        "InitialValue": 5,
+        "MaxValue": 5
+      }
+    },
+    {
+      "assetStoreId": "",
+      "height": 64,
+      "name": "area_1_start",
+      "persistentUuid": "e3ecf7d9-d61a-47ee-b75b-ec7096099504",
+      "texture": "assets\\StartingGround.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite2",
+      "persistentUuid": "7d022ae9-cc8a-4823-adb5-ef1ad92624b7",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NPC",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.5,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 34,
+                        "y": 322
+                      },
+                      {
+                        "x": 206,
+                        "y": 322
+                      },
+                      {
+                        "x": 206,
+                        "y": 603
+                      },
+                      {
+                        "x": 34,
+                        "y": 603
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 34,
+                        "y": 322
+                      },
+                      {
+                        "x": 206,
+                        "y": 322
+                      },
+                      {
+                        "x": 206,
+                        "y": 603
+                      },
+                      {
+                        "x": 34,
+                        "y": 603
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "area_2",
+      "persistentUuid": "c9e5a067-0ca4-48d0-b325-d74b8c582b9b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Mystical Cave to Misty Forest.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 2172,
+                        "y": 0
+                      },
+                      {
+                        "x": 2172,
+                        "y": 724
+                      },
+                      {
+                        "x": 0,
+                        "y": 724
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "33454e7ebbe51f44913847d92c10e31219f1972174a74ae1d54d4662eb109d33",
+      "name": "Fade",
+      "persistentUuid": "471438a6-ddb6-4aab-8891-0988b15a55cb",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "pixel-black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 4,
+                        "y": 0
+                      },
+                      {
+                        "x": 4,
+                        "y": 4
+                      },
+                      {
+                        "x": 0,
+                        "y": 4
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -4080,13 +4449,28 @@
         "objectName": "Boundary"
       },
       {
-        "objectName": "Boundary2"
+        "objectName": "area_2_start"
+      },
+      {
+        "objectName": "area_1_start"
       },
       {
         "objectName": "Coins"
       },
       {
-        "objectName": "NewSprite"
+        "objectName": "area_1"
+      },
+      {
+        "objectName": "RedSmoothHeart"
+      },
+      {
+        "objectName": "NewSprite2"
+      },
+      {
+        "objectName": "area_2"
+      },
+      {
+        "objectName": "Fade"
       }
     ]
   },
@@ -4939,8 +5323,20 @@
       "comment": "Camera"
     },
     {
+      "aiGeneratedEventId": "01M5YS5D2SBNGHX9YWNQRAR2GG",
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentArea",
+            "=",
+            "1"
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -4948,12 +5344,334 @@
           },
           "parameters": [
             "",
-            "Boundary2.Y()+200",
-            "Player.Y()-1000",
-            "Player.X()+1000",
-            "Boundary.Y()",
+            "area_1.X()",
+            "area_1.Y()",
+            "area_1.X() + area_1.Width()",
+            "area_1.Y() + area_1.Height()",
             "",
             ""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5YS5D2SBNGHX9YWNQRAR2GG",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentArea",
+            "=",
+            "2"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ClampCamera"
+          },
+          "parameters": [
+            "",
+            "area_2.X()",
+            "area_2.Y()",
+            "area_2.X() + area_2.Width()",
+            "area_2.Y() + area_2.Height()",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5YV0GGAV6T9K6SSS81M8ZCR",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentArea",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "IsTransitioning",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "Player.CenterX()",
+            ">=",
+            "area_1.X() + area_1.Width()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "IsTransitioning",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+          },
+          "parameters": [
+            "Fade",
+            "Tween",
+            "Opacity",
+            "\"FadeOut\"",
+            "255",
+            "\"linear\"",
+            "0.3",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "await": true,
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.35"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "CurrentArea",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetX"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "area_2_start.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetY"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "area_2_start.Y()"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "aiGeneratedEventId": "01M5YV19A1MZJC2X8A34CNCJPD",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "Fade",
+                "Tween",
+                "Opacity",
+                "\"FadeIn\"",
+                "0",
+                "\"linear\"",
+                "0.3",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "await": true,
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.35"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "IsTransitioning",
+                "False",
+                ""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M5YV0GGAV6T9K6SSS81M8ZCR",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "CurrentArea",
+            "=",
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "IsTransitioning",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::CompareNumbers"
+          },
+          "parameters": [
+            "Player.CenterX()",
+            "<=",
+            "area_2.X()"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "IsTransitioning",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+          },
+          "parameters": [
+            "Fade",
+            "Tween",
+            "Opacity",
+            "\"FadeOut\"",
+            "255",
+            "\"linear\"",
+            "0.3",
+            "no"
+          ]
+        },
+        {
+          "type": {
+            "await": true,
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.35"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "CurrentArea",
+            "=",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetX"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "area_1_start.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetY"
+          },
+          "parameters": [
+            "Player",
+            "=",
+            "area_1_start.Y()"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "aiGeneratedEventId": "01M5YV19A1MZJC2X8A34CNCJPD",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+              },
+              "parameters": [
+                "Fade",
+                "Tween",
+                "Opacity",
+                "\"FadeIn\"",
+                "0",
+                "\"linear\"",
+                "0.3",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "await": true,
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.35"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "IsTransitioning",
+                "False",
+                ""
+              ]
+            }
           ]
         }
       ]
@@ -5024,9 +5742,69 @@
       "visibility": true,
       "cameras": [],
       "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Ambient Hemisphere Light",
+          "doubleParameters": {
+            "elevation": 40,
+            "intensity": 0.33,
+            "rotation": 300
+          },
+          "stringParameters": {
+            "groundColor": "127;127;127",
+            "skyColor": "255;255;255",
+            "top": "Z+"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Scene3D::DirectionalLight",
+          "name": "3D Sun Light",
+          "doubleParameters": {
+            "distanceFromCamera": 1500,
+            "elevation": 40,
+            "frustumSize": 4000,
+            "intensity": 0.75,
+            "minimumShadowBias": 0,
+            "rotation": 300,
+            "shadowDistance": 2000
+          },
+          "stringParameters": {
+            "color": "255;255;255",
+            "shadowQuality": "medium",
+            "shadowRenderingMode": "fittedToCameraView",
+            "top": "Z+"
+          },
+          "booleanParameters": {
+            "isCastingShadow": true
+          }
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
+    {
+      "name": "Anchor",
+      "type": "AnchorBehavior::AnchorBehavior"
+    },
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
@@ -5066,6 +5844,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

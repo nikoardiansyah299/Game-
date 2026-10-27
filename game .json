@@ -1592,6 +1592,78 @@
         "name": "Attack53",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Red Smooth Heart Resource Bar Separated Empty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Red Smooth Heart Resource Bar Separated Empty.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/Kenney/b8f22e8096777e0704c1681e93ac6851675d16df270c947ff2856deb2f9daf56_Red Smooth Heart Resource Bar Separated Empty.png",
+          "name": "Red Smooth Heart Resource Bar Separated Empty.png"
+        }
+      },
+      {
+        "file": "assets/Red Smooth Heart Resource Bar Separated Filled.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Red Smooth Heart Resource Bar Separated Filled.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/Kenney/c3af65dba4c52280b5bc6f09613c63ddbf9de34e7aaf0b1bb724a7d29c55ce6a_Red Smooth Heart Resource Bar Separated Filled.png",
+          "name": "Red Smooth Heart Resource Bar Separated Filled.png"
+        }
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Mystical Cave to Misty Forest.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Mystical Cave to Misty Forest.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Default-panel (24).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-panel (24).png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Fantasy UI Borders/Default Size/Panels/c3d940f22c76133691a97929c0252ed25c55601b7facab0778c659648f581126_Default-panel (24).png",
+          "name": "Default-panel (24).png"
+        }
+      },
+      {
+        "file": "assets/pixel-black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixel-black.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Development Essentials/4×4 Pixels/0e0a38852d04abd3e49e165a9cd552e50670e3daa525e3ab43ccba05219c74d8_pixel-black.png",
+          "name": "pixel-black.png"
+        }
       }
     ]
   },
@@ -1611,6 +1683,10 @@
   "tests": [
     {
       "description": "Pressing Space makes the player jump off the platform it stands on, and gravity brings it back down at the same place.",
+      "lastRunAt": 1793110103846,
+      "lastRunDurationMs": 613,
+      "lastRunFramesExecuted": 97,
+      "lastRunStatus": "passed",
       "name": "Jumping with Space",
       "type": "gameplay",
       "source": [
@@ -1776,10 +1852,10 @@
     },
     {
       "description": "Clicking 3 times chains Attack1->Attack2->Attack3 then returns to Idle",
-      "lastRunAt": 1792908573173,
-      "lastRunDurationMs": 553,
-      "lastRunFramesExecuted": 135,
-      "lastRunStatus": "passed",
+      "lastRunAt": 1793105163140,
+      "lastRunDurationMs": 463,
+      "lastRunFramesExecuted": 61,
+      "lastRunStatus": "failed",
       "name": "Attack combo chains 1-2-3",
       "type": "gameplay",
       "source": [
@@ -1813,8 +1889,8 @@
     },
     {
       "description": "Combo works standing still; moving or jumping cancels the attack",
-      "lastRunAt": 1792913871851,
-      "lastRunDurationMs": 484,
+      "lastRunAt": 1793110104821,
+      "lastRunDurationMs": 697,
       "lastRunFramesExecuted": 175,
       "lastRunStatus": "passed",
       "name": "Attack cancel with move or jump",
@@ -1887,6 +1963,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/platformercharacteranimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
     }
   ],
   "externalLayouts": []
