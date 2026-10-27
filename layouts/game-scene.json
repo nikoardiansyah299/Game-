@@ -21,13 +21,31 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.43357743047024105,
+    "zoomFactor": 0.28172599320795894,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
   "variables": [
+    {
+      "name": "DialogueStep",
+      "persistentUuid": "2a14516d-5190-436c-ac3d-c0a6c3ed80c6",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "DialogueOpen",
+      "persistentUuid": "c221397e-c1dc-469b-b39d-09640b7f8d99",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "NearNPC",
+      "persistentUuid": "d4d53e35-a315-4649-8c37-d887f769718e",
+      "type": "boolean",
+      "value": false
+    },
     {
       "name": "AttackStage",
       "persistentUuid": "7bcb4b10-2138-4cdb-b044-90970cc5c58d",
@@ -53,7 +71,7 @@
       "width": 79,
       "x": -526,
       "y": 757,
-      "zOrder": 1,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -125,6 +143,91 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 174,
+      "keepRatio": true,
+      "layer": "",
+      "name": "npc_ns",
+      "persistentUuid": "1ae86491-4bd6-45e2-9b61-9a5958438ea5",
+      "width": 133,
+      "x": 2236,
+      "y": 813,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "hidden": true,
+      "keepRatio": true,
+      "layer": "",
+      "name": "InteractPrompt",
+      "persistentUuid": "a55df513-5c0f-46c0-aab5-4bec3e07d61b",
+      "width": 0,
+      "x": 2260,
+      "y": 700,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 240,
+      "hidden": true,
+      "keepRatio": true,
+      "layer": "MobileControls",
+      "name": "DialogBox",
+      "persistentUuid": "7b2549ae-d072-473d-8477-2b8480d9e936",
+      "width": 1500,
+      "x": 210,
+      "y": 770,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 50,
+      "hidden": true,
+      "keepRatio": true,
+      "layer": "MobileControls",
+      "name": "DialogName",
+      "persistentUuid": "e3300afe-53bf-48a8-bf3d-d66a2aac62b0",
+      "width": 400,
+      "x": 260,
+      "y": 730,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 180,
+      "hidden": true,
+      "keepRatio": true,
+      "layer": "MobileControls",
+      "name": "DialogText",
+      "persistentUuid": "83143039-12e8-4afb-9e5f-6bd3b6e2da40",
+      "width": 1400,
+      "x": 260,
+      "y": 810,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -155,9 +258,9 @@
           "JumpButton": "A"
         },
         {
+          "acceleration": 2000,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
-          "acceleration": 1000,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": false,
@@ -4062,6 +4165,466 @@
           "yGrabOffset": 0
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "npc_ns",
+      "persistentUuid": "0cd0d2df-a67c-42f6-9f6c-0aeaed20449c",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite26",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite27",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite28",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite29",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite30",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite31",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite32",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite33",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 48,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 40
+                      },
+                      {
+                        "x": 311,
+                        "y": 397
+                      },
+                      {
+                        "x": 48,
+                        "y": 397
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "InteractPrompt",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "[ E ]",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 48,
+      "color": {
+        "b": 0,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 4,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "[ E ]",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 48,
+        "lineHeight": 0,
+        "color": "255;255;0"
+      }
+    },
+    {
+      "assetStoreId": "d4fa0dbc24b0fb6cea34a70c8529b1000feba61c51e315a050ddfb4f2f84dfce",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "DialogBox",
+      "persistentUuid": "08c5ea75-c7df-4cb5-9625-53558e7c7310",
+      "rightMargin": 16,
+      "texture": "Default-panel (30).png",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DialogText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 32,
+      "color": {
+        "b": 40,
+        "g": 20,
+        "r": 20
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 32,
+        "lineHeight": 0,
+        "color": "20;20;40"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DialogName",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "WARGA",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 28,
+      "color": {
+        "b": 0,
+        "g": 255,
+        "r": 0
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 3,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "WARGA",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 28,
+        "lineHeight": 0,
+        "color": "0;255;0"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4087,6 +4650,21 @@
       },
       {
         "objectName": "NewSprite"
+      },
+      {
+        "objectName": "npc_ns"
+      },
+      {
+        "objectName": "InteractPrompt"
+      },
+      {
+        "objectName": "DialogBox"
+      },
+      {
+        "objectName": "DialogText"
+      },
+      {
+        "objectName": "DialogName"
       }
     ]
   },
@@ -4957,6 +5535,400 @@
           ]
         }
       ]
+    },
+    {
+      "aiGeneratedEventId": "01M5TV4P93C2VYVFAC9H78R0MH",
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "NPC Dialog",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "npc_ns",
+                "250",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "DialogueOpen",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "InteractPrompt",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "InteractPrompt",
+                "=",
+                "npc_ns.X() + 16",
+                "=",
+                "npc_ns.Y() - 80"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "NearNPC",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "InteractPrompt"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "NearNPC",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "NearNPC",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "DialogueOpen",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"e\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "DialogBox",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "DialogName",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "DialogText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "InteractPrompt"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "DialogueOpen",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "DialogueStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DialogName",
+                "Text",
+                "=",
+                "\"WARGA\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "DialogText",
+                "Text",
+                "=",
+                "\"Halo, petualang! Tekan E lagi...\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DialogAdvance\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "DialogueOpen",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"e\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"DialogAdvance\"",
+                ">",
+                "0.3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "DialogueStep",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"DialogAdvance\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "DialogueStep",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DialogText",
+                    "Text",
+                    "=",
+                    "\"Hati-hati di depan! Banyak jebakan...\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "DialogueStep",
+                    "=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DialogText",
+                    "Text",
+                    "=",
+                    "\"Ambil semua koin dan kalahkan musuhmu!\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "DialogueStep",
+                    ">=",
+                    "3"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "DialogBox"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "DialogName"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "DialogText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueOpen",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "DialogueStep",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -5066,6 +6038,10 @@
     {
       "name": "SmoothCamera",
       "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     }
   ]
 }
