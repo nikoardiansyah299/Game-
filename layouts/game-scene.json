@@ -21,13 +21,18 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.28172599320795894,
+    "zoomFactor": 0.2550455473354367,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
   },
   "objectsGroups": [],
   "variables": [
+    {
+      "name": "TutorialStep",
+      "type": "number",
+      "value": 0
+    },
     {
       "name": "DialogueStep",
       "persistentUuid": "2a14516d-5190-436c-ac3d-c0a6c3ed80c6",
@@ -154,8 +159,8 @@
       "name": "npc_ns",
       "persistentUuid": "1ae86491-4bd6-45e2-9b61-9a5958438ea5",
       "width": 133,
-      "x": 2236,
-      "y": 813,
+      "x": 2895,
+      "y": 789,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -168,11 +173,11 @@
       "hidden": true,
       "keepRatio": true,
       "layer": "",
-      "name": "InteractPrompt",
+      "name": "InteractPrompt_ns",
       "persistentUuid": "a55df513-5c0f-46c0-aab5-4bec3e07d61b",
       "width": 0,
-      "x": 2260,
-      "y": 700,
+      "x": 2938,
+      "y": 747,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -185,7 +190,7 @@
       "hidden": true,
       "keepRatio": true,
       "layer": "MobileControls",
-      "name": "DialogBox",
+      "name": "DialogBox_ns",
       "persistentUuid": "7b2549ae-d072-473d-8477-2b8480d9e936",
       "width": 1500,
       "x": 210,
@@ -202,7 +207,7 @@
       "hidden": true,
       "keepRatio": true,
       "layer": "MobileControls",
-      "name": "DialogName",
+      "name": "DialogName_ns",
       "persistentUuid": "e3300afe-53bf-48a8-bf3d-d66a2aac62b0",
       "width": 400,
       "x": 260,
@@ -219,11 +224,60 @@
       "hidden": true,
       "keepRatio": true,
       "layer": "MobileControls",
-      "name": "DialogText",
+      "name": "DialogText_ns",
       "persistentUuid": "83143039-12e8-4afb-9e5f-6bd3b6e2da40",
       "width": 1400,
       "x": 260,
       "y": 810,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "a_d_key",
+      "persistentUuid": "13145fdc-8d98-48f7-b8f5-2ca8687feb4a",
+      "width": 0,
+      "x": -526,
+      "y": 450,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "hidden": true,
+      "keepRatio": true,
+      "layer": "",
+      "name": "space_key",
+      "persistentUuid": "dd2741a0-72ef-49b8-8f1f-65918144613f",
+      "width": 0,
+      "x": -526,
+      "y": 450,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 60,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TutorialText",
+      "persistentUuid": "44ed3e64-bab4-472f-a44c-344ebad08ebc",
+      "width": 553,
+      "x": -526,
+      "y": 700,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
@@ -250,6 +304,13 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "Flash",
+          "type": "Flash::Flash",
+          "HalfPeriodTime": 0.1,
+          "IsFlashing": false,
+          "FlashDuration": 0
+        },
+        {
           "name": "PlatformerMultitouchMapper",
           "type": "SpriteMultitouchJoystick::PlatformerMultitouchMapper",
           "Property": "PlatformerObject",
@@ -258,9 +319,9 @@
           "JumpButton": "A"
         },
         {
-          "acceleration": 2000,
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior",
+          "acceleration": 2000,
           "canGoDownFromJumpthru": true,
           "canGrabPlatforms": false,
           "canGrabWithoutMoving": false,
@@ -321,13 +382,17 @@
           "WaitingSpeedYMax": 0,
           "WaitingEnd": 0,
           "CameraDelayCatchUpDuration": 0,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
+          "LeftwardSpeedMax": 1200,
+          "RightwardSpeedMax": 1200,
+          "UpwardSpeedMax": 1200,
+          "DownwardSpeedMax": 1200,
           "OldX": 0,
           "OldY": 0,
           "IsCalledManually": false
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ],
       "animations": [
@@ -4484,7 +4549,8 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "InteractPrompt",
+      "name": "InteractPrompt_ns",
+      "persistentUuid": "5ad0ffcc-a263-402d-8b42-565779854ead",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -4492,13 +4558,13 @@
       "effects": [],
       "behaviors": [],
       "string": "[ E ]",
-      "font": "",
+      "font": "2d361282cf7e5646ed37f5eb34beea0802af5f6bf922414f9dde6a825141f979_Kenney High Square.ttf",
       "textAlignment": "center",
       "characterSize": 48,
       "color": {
-        "b": 0,
-        "g": 255,
-        "r": 255
+        "b": 255,
+        "g": 246,
+        "r": 252
       },
       "content": {
         "bold": true,
@@ -4515,12 +4581,12 @@
         "smoothed": true,
         "underlined": false,
         "text": "[ E ]",
-        "font": "",
+        "font": "2d361282cf7e5646ed37f5eb34beea0802af5f6bf922414f9dde6a825141f979_Kenney High Square.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 48,
         "lineHeight": 0,
-        "color": "255;255;0"
+        "color": "252;246;255"
       }
     },
     {
@@ -4528,7 +4594,7 @@
       "bottomMargin": 16,
       "height": 48,
       "leftMargin": 16,
-      "name": "DialogBox",
+      "name": "DialogBox_ns",
       "persistentUuid": "08c5ea75-c7df-4cb5-9625-53558e7c7310",
       "rightMargin": 16,
       "texture": "Default-panel (30).png",
@@ -4544,7 +4610,8 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "DialogText",
+      "name": "DialogText_ns",
+      "persistentUuid": "e10010e1-8acc-4d5f-a0a1-0412403441b4",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -4587,7 +4654,8 @@
       "assetStoreId": "",
       "bold": true,
       "italic": false,
-      "name": "DialogName",
+      "name": "DialogName_ns",
+      "persistentUuid": "bfb5808d-9637-4c25-83cf-633993672b5d",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -4625,6 +4693,172 @@
         "lineHeight": 0,
         "color": "0;255;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "a_d_key",
+      "persistentUuid": "8562c031-be0f-4188-a050-c1ebf15017a0",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite34",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 101,
+                        "y": 162
+                      },
+                      {
+                        "x": 465,
+                        "y": 162
+                      },
+                      {
+                        "x": 465,
+                        "y": 268
+                      },
+                      {
+                        "x": 101,
+                        "y": 268
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "space_key",
+      "persistentUuid": "3e51c2a9-f02d-4d79-8736-d9953ff9e697",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "computer-keyboard-spacebar-key-pixel-free-vector.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 65,
+                        "y": 129
+                      },
+                      {
+                        "x": 285,
+                        "y": 129
+                      },
+                      {
+                        "x": 285,
+                        "y": 220
+                      },
+                      {
+                        "x": 65,
+                        "y": 220
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TutorialText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "tekan a/d untuk bergerak",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 36,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 4,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "tekan a/d untuk bergerak",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 36,
+        "lineHeight": 0,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -4655,16 +4889,25 @@
         "objectName": "npc_ns"
       },
       {
-        "objectName": "InteractPrompt"
+        "objectName": "InteractPrompt_ns"
       },
       {
-        "objectName": "DialogBox"
+        "objectName": "DialogBox_ns"
       },
       {
-        "objectName": "DialogText"
+        "objectName": "DialogText_ns"
       },
       {
-        "objectName": "DialogName"
+        "objectName": "DialogName_ns"
+      },
+      {
+        "objectName": "a_d_key"
+      },
+      {
+        "objectName": "space_key"
+      },
+      {
+        "objectName": "TutorialText"
       }
     ]
   },
@@ -5542,7 +5785,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "NPC Dialog",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5578,7 +5820,7 @@
                 "value": "Show"
               },
               "parameters": [
-                "InteractPrompt",
+                "InteractPrompt_ns",
                 ""
               ]
             },
@@ -5587,7 +5829,7 @@
                 "value": "SetXY"
               },
               "parameters": [
-                "InteractPrompt",
+                "InteractPrompt_ns",
                 "=",
                 "npc_ns.X() + 16",
                 "=",
@@ -5615,7 +5857,7 @@
                 "value": "Hide"
               },
               "parameters": [
-                "InteractPrompt"
+                "InteractPrompt_ns"
               ]
             },
             {
@@ -5669,7 +5911,7 @@
                 "value": "Show"
               },
               "parameters": [
-                "DialogBox",
+                "DialogBox_ns",
                 ""
               ]
             },
@@ -5678,7 +5920,7 @@
                 "value": "Show"
               },
               "parameters": [
-                "DialogName",
+                "DialogName_ns",
                 ""
               ]
             },
@@ -5687,7 +5929,7 @@
                 "value": "Show"
               },
               "parameters": [
-                "DialogText",
+                "DialogText_ns",
                 ""
               ]
             },
@@ -5696,7 +5938,7 @@
                 "value": "Hide"
               },
               "parameters": [
-                "InteractPrompt"
+                "InteractPrompt_ns"
               ]
             },
             {
@@ -5724,7 +5966,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "DialogName",
+                "DialogName_ns",
                 "Text",
                 "=",
                 "\"WARGA\""
@@ -5735,7 +5977,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "DialogText",
+                "DialogText_ns",
                 "Text",
                 "=",
                 "\"Halo, petualang! Tekan E lagi...\""
@@ -5828,10 +6070,10 @@
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "DialogText",
+                    "DialogText_ns",
                     "Text",
                     "=",
-                    "\"Hati-hati di depan! Banyak jebakan...\""
+                    "\"Aku Nuru Syahrirramadhan, 240533605851 adalah ID ku\""
                   ]
                 }
               ]
@@ -5856,10 +6098,10 @@
                     "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "DialogText",
+                    "DialogText_ns",
                     "Text",
                     "=",
-                    "\"Ambil semua koin dan kalahkan musuhmu!\""
+                    "\"Disini cukup berbahaya, kurasa kau harus keluar dari goa ini..!\""
                   ]
                 }
               ]
@@ -5884,7 +6126,7 @@
                     "value": "Hide"
                   },
                   "parameters": [
-                    "DialogBox"
+                    "DialogBox_ns"
                   ]
                 },
                 {
@@ -5892,7 +6134,7 @@
                     "value": "Hide"
                   },
                   "parameters": [
-                    "DialogName"
+                    "DialogName_ns"
                   ]
                 },
                 {
@@ -5900,7 +6142,7 @@
                     "value": "Hide"
                   },
                   "parameters": [
-                    "DialogText"
+                    "DialogText_ns"
                   ]
                 },
                 {
@@ -5921,6 +6163,331 @@
                     "DialogueStep",
                     "=",
                     "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "aiGeneratedEventId": "01M5YSCN02XXWTBM00A42X2F5Y",
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Tutorial",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TutorialStep",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "a_d_key",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "space_key"
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "TutorialText",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TutorialText",
+                "Text",
+                "=",
+                "\"tekan a/d untuk bergerak\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "TutorialStep",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "a_d_key",
+                "=",
+                "Player.CenterX() - a_d_key.Width() / 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "a_d_key",
+                "=",
+                "Player.Y() - 400"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "TutorialText",
+                "=",
+                "Player.CenterX() - TutorialText.Width() / 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "TutorialText",
+                "=",
+                "Player.Y() - 90"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"a\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"d\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Right\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "a_d_key"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "space_key",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "TutorialText",
+                    "Text",
+                    "=",
+                    "\"tekan space untuk melompat\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "TutorialStep",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M5YSD531D2K5861ENQK9MPJ4",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "TutorialStep",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "space_key",
+                "=",
+                "Player.CenterX() - space_key.Width() / 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "space_key",
+                "=",
+                "Player.Y() - 400"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "TutorialText",
+                "=",
+                "Player.CenterX() - TutorialText.Width() / 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "TutorialText",
+                "=",
+                "Player.Y() - 90"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "space_key"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "TutorialText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "TutorialStep",
+                    "=",
+                    "2"
                   ]
                 }
               ]
@@ -6008,6 +6575,10 @@
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "Flash",
+      "type": "Flash::Flash"
+    },
+    {
       "name": "Flippable",
       "type": "FlippableCapability::FlippableBehavior"
     },
@@ -6042,6 +6613,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
     }
   ]
 }

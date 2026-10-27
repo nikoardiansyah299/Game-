@@ -1872,6 +1872,45 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Fantasy UI Borders/Default Size/Panels/21d2f70d8f0a07843e7bdc9369cf376467c654f146d2ae437a900ad78550bf29_Default-panel (30).png",
           "name": "Default-panel (30).png"
         }
+      },
+      {
+        "file": "assets/Kenney High Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "2d361282cf7e5646ed37f5eb34beea0802af5f6bf922414f9dde6a825141f979_Kenney High Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/2d361282cf7e5646ed37f5eb34beea0802af5f6bf922414f9dde6a825141f979_Kenney High Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Smoke.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Smoke.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Particles/PixiJS/04556cffa8fa75a9515382f3ad3d092361a7a339c612344926d372f906e3e7ed_Smoke.png",
+          "name": "Smoke.png"
+        }
+      },
+      {
+        "file": "assets/NewSprite34.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite34",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "computer-keyboard-spacebar-key-pixel-free-vector.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "computer-keyboard-spacebar-key-pixel-free-vector.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -2149,6 +2188,84 @@
         "harness.assert(p.animation === 'Jump' || p.animation === 'Fall', 'Jump during attack switches to Jump/Fall, got '+p.animation);",
         "await harness.takeScreenshot('cancel-done');"
       ]
+    },
+    {
+      "description": "Blink dash moves ~150px, cooldown blocks spam, works after 0.5s",
+      "lastRunAt": 1793082861725,
+      "lastRunDurationMs": 1836,
+      "lastRunFramesExecuted": 85,
+      "lastRunStatus": "passed",
+      "name": "Blink dash test",
+      "type": "gameplay",
+      "source": [
+        "await harness.goToScene('Game Scene');",
+        "await harness.stepFrames(30);",
+        "let players = harness.getObjects('Player');",
+        "harness.assert(players.length > 0, 'Player exists');",
+        "const x0 = players[0].centerX;",
+        "// Hold Shift then tap D for blink right",
+        "harness.setKeyPressed('LShift', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('d', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('d', false);",
+        "await harness.stepFrames(2);",
+        "players = harness.getObjects('Player');",
+        "const x1 = players[0].centerX;",
+        "const dx = x1 - x0;",
+        "harness.assert(dx > 100 && dx < 200, 'Blink right moved ~150px (moved ' + dx + ')');",
+        "// Immediate second blink should be blocked by cooldown",
+        "harness.setKeyPressed('d', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('d', false);",
+        "await harness.stepFrames(2);",
+        "players = harness.getObjects('Player');",
+        "const x2 = players[0].centerX;",
+        "harness.assert(Math.abs(x2 - x1) < 5, 'Cooldown blocks immediate second blink (moved ' + (x2 - x1) + ')');",
+        "// Wait 0.6s then blink again should work",
+        "await harness.stepFrames(40);",
+        "harness.setKeyPressed('d', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('d', false);",
+        "await harness.stepFrames(2);",
+        "players = harness.getObjects('Player');",
+        "const x3 = players[0].centerX;",
+        "harness.assert((x3 - x2) > 100, 'Blink works again after cooldown (moved ' + (x3 - x2) + ')');",
+        "harness.releaseAllInputs();"
+      ]
+    },
+    {
+      "description": "Blink FX spawns and camera glides instead of snapping",
+      "lastRunAt": 1793083500707,
+      "lastRunDurationMs": 2368,
+      "lastRunFramesExecuted": 96,
+      "lastRunStatus": "passed",
+      "name": "Blink dash FX and smooth camera",
+      "type": "gameplay",
+      "source": [
+        "await harness.goToScene('Game Scene');",
+        "await harness.stepFrames(30);",
+        "const x0 = harness.getObjects('Player')[0].centerX;",
+        "const cam0 = harness.getCameraState('');",
+        "harness.setKeyPressed('LShift', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('d', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('d', false);",
+        "await harness.stepFrames(1);",
+        "const x1 = harness.getObjects('Player')[0].centerX;",
+        "const cam1 = harness.getCameraState('');",
+        "harness.assert((x1 - x0) > 100, 'Blink moved player ' + (x1 - x0));",
+        "harness.assert(Math.abs(cam1.x - cam0.x) < 140, 'Camera did not snap full distance instantly (moved ' + Math.abs(cam1.x - cam0.x) + ')');",
+        "await harness.stepFrames(60);",
+        "const cam2 = harness.getCameraState('');",
+        "const playerX2 = harness.getObjects('Player')[0].centerX;",
+        "const halfW = harness.getGameResolutionWidth()/2;",
+        "harness.assert(Math.abs(playerX2 - cam2.x) < halfW, 'Player stays visible after blink (offset ' + Math.abs(playerX2 - cam2.x) + ' < ' + halfW + ')');",
+        "const fx = harness.getObjects('DashTrail');",
+        "harness.assert(fx.length >= 1, 'Dash particle trail spawned');",
+        "harness.releaseAllInputs();"
+      ]
     }
   ],
   "eventsFunctionsExtensions": [
@@ -2167,6 +2284,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/platformercharacteranimator"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/flash"
     }
   ],
   "externalLayouts": []
