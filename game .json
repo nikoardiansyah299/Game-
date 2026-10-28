@@ -1664,6 +1664,1333 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Development Essentials/4×4 Pixels/0e0a38852d04abd3e49e165a9cd552e50670e3daa525e3ab43ccba05219c74d8_pixel-black.png",
           "name": "pixel-black.png"
         }
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite.png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite4.png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite7.png\"}",
+        "name": "NewSprite7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite8.png\"}",
+        "name": "NewSprite8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Default-panel (30).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-panel (30).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Default-panel (30)2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-panel (30)2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite34.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "computer-keyboard-spacebar-key-pixel-free-vector.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"computer-keyboard-spacebar-key-pixel-free-vector.png\",\"extension\":\".png\"}",
+        "name": "computer-keyboard-spacebar-key-pixel-free-vector.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/DotGothic16-Regular2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/Japanese/561d75b195f4dfcbdf0c38511984c83680574032d6b8c3c6a436a4fd32094320_DotGothic16-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "NewSprite33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite33.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite32.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite31.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite30.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite28.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite29.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite27.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "NewSprite26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewSprite26.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle37.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle38.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle39.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle40.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle41.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle42.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle43.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle44.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle45.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "idle46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "idle46.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Kenney High Square2.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "2d361282cf7e5646ed37f5eb34beea0802af5f6bf922414f9dde6a825141f979_Kenney High Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/2d361282cf7e5646ed37f5eb34beea0802af5f6bf922414f9dde6a825141f979_Kenney High Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/NewSprite10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite16.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite16",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite17.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite17",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite18.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite18",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite19.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite19",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite20.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite20",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite21.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite21",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite22.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite22",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite23.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite23",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite24.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite24",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite25.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite25",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../Downloads/Flying Demon 2D Pixel Art/Sprites/with_outline/HURT.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../../Downloads/Flying Demon 2D Pixel Art/Sprites/with_outline/HURT.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite26",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite27",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite28",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite35.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite29",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite30",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite31",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite32",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite36.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite33",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite34",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite35",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite36",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite37.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite37",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite38.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite38",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite39.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite39",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite40.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite40",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite41.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite41",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite42.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite42",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite43",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite44",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite45",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite46",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite47",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite48",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player43.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player43",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player44.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player44",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player45.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player45",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player46.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player46",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player47.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player47",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player48",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "../../Downloads/FREE_Knight 2D Pixel Art v1.2/Sprites/HURT8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/hurt8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "hurt8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite49",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite50",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player49",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player50",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player51",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player52",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player53.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player53",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player54.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player54",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player55.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player55",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player56.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player56",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player57.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player57",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player58.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player58",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player59.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player59",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player60.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player60",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player61.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player61",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player62.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player62",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player63.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player63",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death7",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death8",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death9.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death9",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death10.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death10",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death11.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death11",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death12.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death12",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death13.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death13",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death14",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/death15.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "death15",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player64.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player64",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player65.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player65",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player66.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player66",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player67.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player67",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player68.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player68",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player69.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player69",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/parry.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "parry",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/parry2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "parry2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/parry3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "parry3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/parry4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "parry4",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/parry5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "parry5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/parry6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "parry6",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel Cave Crystal Tileset.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Pixel Cave Crystal Tileset.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Pixel Cave Crystal Tileset.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Pixel Cave Crystal Tileset2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pixel Cave Crystal Tileset2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pixel Cave Crystal Tileset2.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Pixel Cave Crystal Tileset2.png2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/PressStart2P-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/44904f17cd5efc06565a08838d627234cda763a6406798f0cbbdf1cf60c676b3_PressStart2P-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "Portal-Spinning2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning7.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning8.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning9.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning10.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Portal-Spinning11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Portal-Spinning11.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Blank Underline_Idle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Blank Underline_Idle.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/88a0c0a81e0cd72bfddeedd13576f97189bed1dc85f0d355f98a2b9621e41aa0_Blank Underline_Idle.png",
+          "name": "Blank Underline_Idle.png"
+        }
+      },
+      {
+        "file": "assets/SkeletonHand.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\SkeletonHand.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/3157c10817dd183ee137b67264272855a96015807110f7c10c354b5608c0d132_SkeletonHand.png",
+          "name": "SkeletonHand.png"
+        }
+      },
+      {
+        "file": "assets/Skull GameOver Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Skull GameOver Background.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/3826a1e5f895a011207de42750b83ad6db30d3cfac01efe54e9bc0a0b424aab5_Skull GameOver Background.png",
+          "name": "Skull GameOver Background.png"
+        }
+      },
+      {
+        "file": "assets/Skull.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Skull.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/9318e301cdfce96a93dbff7e071bf30ae0bc14208b458198b657e746f0cee8f2_Skull.png",
+          "name": "Skull.png"
+        }
+      },
+      {
+        "file": "assets/CantoraOne-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "CantoraOne-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
+          "name": "CantoraOne-Regular.ttf"
+        }
+      },
+      {
+        "file": "assets/NotoSansArabicUI-Black.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets\\NotoSansArabicUI-Black.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Game over dialogs/58f64bcc48842f9a938582fee628aa6f6b2c229db5f8e4c82a09b3ab0b7ceed5_NotoSansArabicUI-Black.ttf",
+          "name": "NotoSansArabicUI-Black.ttf"
+        }
+      },
+      {
+        "file": "Pixel-Art Fantasy Victory Screen.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pixel-Art Fantasy Victory Screen.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Blood Moon Knightfall Defeat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blood Moon Knightfall Defeat.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Ksatria di Gua Kristal bercahaya.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ksatria di Gua Kristal bercahaya.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Ornate Crystal Play Emblem.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ornate Crystal Play Emblem.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -1677,6 +3004,18 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/scene-3"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/scene-2"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/scene-1"
     }
   ],
   "externalEvents": [],
@@ -1967,6 +3306,30 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/tiledunitsbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/rectanglemovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/advancedjump"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/leaderboarddialog"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/tweenintoview"
     }
   ],
   "externalLayouts": []
